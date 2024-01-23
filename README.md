@@ -1,0 +1,12 @@
+library(lcd)
+library(gRbase)
+library(ggm)
+library(pcalg)
+setwd("C:/Users/Lenovo/Desktop/paper_code")
+source("evaluation.R")
+source("minitri.R")
+source("PClike.R")
+source("learn.skel.R")
+
+toy_.01_100 <- replicate(100,{evalcg(0.01,100,toy.graph)})
+apply(toy_.01_100,1,mean)
