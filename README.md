@@ -7,6 +7,6 @@ source("evaluation.R")
 source("minitri.R")
 source("PClike.R")
 source("learn.skel.R")
-
+以toy网络为例
 toy_.01_100 <- replicate(100,{evalcg(0.01,100,toy.graph)})
 apply(toy_.01_100,1,mean)
